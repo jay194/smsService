@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    android:backgroundTint="#65FFFFFF"
+    android:backgroundTintMode="src_over"
+    tools:context=".ClientAccountActivity">
+
+    <TextView
+        android:id="@+id/tvClientLastName"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvLabelClientPhone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelClientLastName" />
+
+    <TextView
+        android:id="@+id/tvLabelClientLastName"
+        android:layout_width="146dp"
+        android:layout_height="35dp"
+        android:text="Last Name"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvClientLastName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/tvClientFirstName" />
+
+    <TextView
+        android:id="@+id/tvLabelClientUsername"
+        android:layout_width="146dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="108dp"
+        android:text="Username"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvClientUsername"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvClientID"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvClientUsername"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="34dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvLabelClientEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelClientUsername" />
+
+    <TextView
+        android:id="@+id/tvLabelClientEmail"
+        android:layout_width="146dp"
+        android:layout_height="35dp"
+        android:text="Email"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvClientEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/tvClientUsername" />
+
+    <TextView
+        android:id="@+id/tvClientEmail"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvLabelClientAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelClientEmail" />
+
+    <TextView
+        android:id="@+id/tvLabelClientPhone"
+        android:layout_width="146dp"
+        android:layout_height="35dp"
+        android:text="Phone"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvClientPhone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/tvClientLastName" />
+
+    <TextView
+        android:id="@+id/tvClientPhone"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelClientPhone" />
+
+    <TextView
+        android:id="@+id/tvLabelClientZip"
+        android:layout_width="146dp"
+        android:layout_height="35dp"
+        android:text="Zipcode"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvClientZip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/tvClientAddress" />
+
+    <TextView
+        android:id="@+id/tvClientZip"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvLabelClientFirstName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelClientZip" />
+
+    <TextView
+        android:id="@+id/tvLabelClientAddress"
+        android:layout_width="146dp"
+        android:layout_height="35dp"
+        android:text="Address"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvClientAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/tvClientEmail" />
+
+    <TextView
+        android:id="@+id/tvClientAddress"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvLabelClientZip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelClientAddress" />
+
+    <TextView
+        android:id="@+id/tvLabelClientFirstName"
+        android:layout_width="146dp"
+        android:layout_height="35dp"
+        android:text="First Name"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvClientFirstName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/tvClientZip" />
+
+    <TextView
+        android:id="@+id/tvClientFirstName"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvLabelClientLastName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelClientFirstName" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="-10dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <Button
+        android:id="@+id/btnMenu"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_button"
+        android:text="Menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/tvClientPhone" />
+
+    <TextView
+        android:id="@+id/tvLabelClientID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID:"
+        android:textColor="@android:color/background_dark"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/guideline2"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/tvClientID"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="26dp"
+        app:layout_constraintStart_toEndOf="@+id/tvLabelClientID"
+        tools:layout_editor_absoluteY="2dp" />
+</android.support.constraint.ConstraintLayout>

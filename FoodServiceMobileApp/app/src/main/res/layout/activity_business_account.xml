@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    android:backgroundTint="#65FFFFFF"
+    android:backgroundTintMode="src_over"
+    tools:context=".BusinessAccountActivity">
+
+
+    <TextView
+        android:id="@+id/tvLabelBusinessUsername"
+        android:layout_width="155dp"
+        android:layout_height="36dp"
+        android:fontFamily="sans-serif"
+        android:text="Username"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="22dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/tvBusinessUsername"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvBusinessUsername"
+        android:layout_width="300dp"
+        android:layout_height="36dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvLabelBusinessEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelBusinessUsername" />
+
+    <TextView
+        android:id="@+id/tvLabelBusinessEmail"
+        android:layout_width="155dp"
+        android:layout_height="36dp"
+        android:fontFamily="sans-serif"
+        android:text="Email"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="22dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/tvBusinessEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBusinessUsername" />
+
+    <TextView
+        android:id="@+id/tvBusinessEmail"
+        android:layout_width="300dp"
+        android:layout_height="36dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:scrollHorizontally="true"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvLabelBusinessAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelBusinessEmail" />
+
+    <TextView
+        android:id="@+id/tvLabelBusinessPhone"
+        android:layout_width="155dp"
+        android:layout_height="36dp"
+        android:fontFamily="sans-serif"
+        android:text="Phone"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="22dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/tvBusinessPhone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBusinessName" />
+
+    <TextView
+        android:id="@+id/tvBusinessPhone"
+        android:layout_width="300dp"
+        android:layout_height="36dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:scrollHorizontally="true"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelBusinessPhone" />
+
+    <TextView
+        android:id="@+id/tvLabelBusinessZip"
+        android:layout_width="155dp"
+        android:layout_height="36dp"
+        android:fontFamily="sans-serif"
+        android:text="Zipcode"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="22dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/tvBusinessZip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBusinessAddress" />
+
+    <TextView
+        android:id="@+id/tvBusinessZip"
+        android:layout_width="300dp"
+        android:layout_height="36dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvLabelBusinessName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelBusinessZip" />
+
+    <TextView
+        android:id="@+id/tvLabelBusinessAddress"
+        android:layout_width="155dp"
+        android:layout_height="36dp"
+        android:fontFamily="sans-serif"
+        android:text="Address"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="22dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/tvBusinessAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBusinessEmail" />
+
+    <TextView
+        android:id="@+id/tvBusinessAddress"
+        android:layout_width="300dp"
+        android:layout_height="36dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:scrollHorizontally="true"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvLabelBusinessZip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelBusinessAddress" />
+
+    <TextView
+        android:id="@+id/tvLabelBusinessName"
+        android:layout_width="155dp"
+        android:layout_height="36dp"
+        android:fontFamily="sans-serif"
+        android:text="Business Name"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="22dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/tvBusinessName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBusinessZip" />
+
+    <TextView
+        android:id="@+id/tvBusinessName"
+        android:layout_width="300dp"
+        android:layout_height="36dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvLabelBusinessPhone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelBusinessName" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <Button
+        android:id="@+id/btnMenu"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_button"
+        android:text="Menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBusinessPhone" />
+</android.support.constraint.ConstraintLayout>

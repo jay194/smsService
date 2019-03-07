@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    android:backgroundTint="#65FFFFFF"
+    android:backgroundTintMode="src_over"
+    tools:context="com.example.jaren.foodservice_mobileapp.RegisterClientActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <EditText
+        android:id="@+id/etClientPassword"
+        android:layout_width="163dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/background_dark"
+        app:layout_constraintBottom_toTopOf="@+id/etClientEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/etClientUsername" />
+
+    <EditText
+        android:id="@+id/etClientLastName"
+        android:layout_width="163dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/background_dark"
+        app:layout_constraintBottom_toTopOf="@+id/etClientPhone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/etClientFirstName" />
+
+    <EditText
+        android:id="@+id/etClientUsername"
+        android:layout_width="163dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/background_dark"
+        app:layout_constraintBottom_toTopOf="@+id/etClientPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/guideline" />
+
+    <EditText
+        android:id="@+id/etClientEmail"
+        android:layout_width="163dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/background_dark"
+        app:layout_constraintBottom_toTopOf="@+id/etClientAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/etClientPassword" />
+
+    <EditText
+        android:id="@+id/etClientPhone"
+        android:layout_width="163dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:hint="Phone"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/background_dark"
+        app:layout_constraintBottom_toTopOf="@+id/btnClientRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/etClientLastName" />
+
+    <EditText
+        android:id="@+id/etClientZip"
+        android:layout_width="163dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:hint="Zipcode"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/background_dark"
+        app:layout_constraintBottom_toTopOf="@+id/etClientFirstName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/etClientAddress"
+        tools:text="@tools:sample/us_zipcodes" />
+
+    <EditText
+        android:id="@+id/etClientAddress"
+        android:layout_width="163dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:hint="Address"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/background_dark"
+        app:layout_constraintBottom_toTopOf="@+id/etClientZip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/etClientEmail" />
+
+    <EditText
+        android:id="@+id/etClientFirstName"
+        android:layout_width="163dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/background_dark"
+        app:layout_constraintBottom_toTopOf="@+id/etClientLastName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/etClientZip" />
+
+    <Button
+        android:id="@+id/btnClientRegister"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/rounded_button"
+        android:text="Register"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/rounded_button"
+        android:text="Login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnClientRegister"
+        app:layout_constraintHorizontal_bias="0.226"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

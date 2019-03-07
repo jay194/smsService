@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    android:backgroundTint="#65FFFFFF"
+    android:backgroundTintMode="src_over"
+    tools:context=".BusinessCreatePackageActivity">
+
+    <EditText
+        android:id="@+id/etPackagePrice"
+        android:layout_width="163dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:hint="Price"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/background_dark"
+        app:layout_constraintBottom_toTopOf="@+id/etPackageExpiry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPackageQuantity" />
+
+    <EditText
+        android:id="@+id/etPackageQuantity"
+        android:layout_width="163dp"
+        android:layout_height="46dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="Quantity"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/background_dark"
+        app:layout_constraintBottom_toTopOf="@+id/etPackagePrice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPackageDescription" />
+
+    <EditText
+        android:id="@+id/etPackageExpiry"
+        android:layout_width="163dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:hint="Expiration Date"
+        android:inputType="datetime"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/background_dark"
+        app:layout_constraintBottom_toTopOf="@+id/btnCreatePackage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPackagePrice" />
+
+    <EditText
+        android:id="@+id/etPackageDescription"
+        android:layout_width="163dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:hint="Description"
+        android:inputType="textMultiLine"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/background_dark"
+        app:layout_constraintBottom_toTopOf="@+id/etPackageQuantity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPackageName" />
+
+    <Button
+        android:id="@+id/btnMenu"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_button"
+        android:text="Menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCreatePackage" />
+
+    <Button
+        android:id="@+id/btnCreatePackage"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_button"
+        android:text="Create"
+        app:layout_constraintBottom_toTopOf="@+id/btnMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPackageExpiry" />
+
+    <EditText
+        android:id="@+id/etPackageName"
+        android:layout_width="163dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:hint="Food Name"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/background_dark"
+        app:layout_constraintBottom_toTopOf="@+id/etPackageDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
